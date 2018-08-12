@@ -1,22 +1,16 @@
 package unix.caixa.sistema.animacao.lista.craft.execute;
 
+import net.minecraft.server.v1_8_R3.BlockPosition;
 import org.bukkit.Location;
-import org.bukkit.Material;
 import org.bukkit.Sound;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
-import org.bukkit.block.BlockState;
 import org.bukkit.craftbukkit.v1_8_R3.CraftWorld;
 import org.bukkit.craftbukkit.v1_8_R3.util.CraftMagicNumbers;
 import org.bukkit.entity.ArmorStand;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
-import org.bukkit.material.Directional;
-import org.bukkit.material.MaterialData;
 import org.bukkit.scheduler.BukkitRunnable;
-
-import net.minecraft.server.v1_8_R3.BlockPosition;
-import org.bukkit.util.EulerAngle;
 import unix.caixa.sistema.UnixCaixa;
 import unix.caixa.sistema.data.BauType;
 import unix.caixa.sistema.data.BausMagicoJogador;
@@ -27,8 +21,6 @@ import unix.caixa.sistema.util.Blocos;
 import unix.caixa.sistema.util.Holograma;
 import unix.caixa.sistema.util.ItemStackUtil;
 import unix.caixa.sistema.util.Particulas;
-
-import java.util.Random;
 
 public class CraftExecute {
 
@@ -181,6 +173,7 @@ public class CraftExecute {
         main.setGravity(false);
         String premio =  Premio.valueOf(bt.SortearPremio()).texto;
         main.setCustomName("§eVocê ganhou " + premio);
+        bt.Premio(jogador, premio);
         main.setCustomNameVisible(true);
         main.getLocation().getWorld().playSound(main.getLocation(), Sound.FIREWORK_LAUNCH, 1, 0.2F);
         main.getLocation().getWorld().playSound(main.getLocation(), Sound.BAT_HURT, 1, 0.2F);

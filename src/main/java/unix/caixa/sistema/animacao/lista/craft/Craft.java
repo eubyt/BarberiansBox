@@ -13,7 +13,7 @@ public class Craft implements UnixAnimacao {
 
     public void animacao_open(Block bloco, Player jogador, BauType BauType) {
 
-
+//
         new CraftExecute(bloco, jogador, BauType);
     }
 
