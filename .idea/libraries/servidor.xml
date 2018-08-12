@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="servidor">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/tests/servidor.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Desktop/tests/servidor.jar!/" />
+    </SOURCES>
+  </library>
+</component>

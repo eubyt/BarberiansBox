@@ -1,0 +1,4 @@
+name: BarberiansBoxs
+main: unix.caixa.sistema.UnixCaixa
+version: 0.1.19
+authors: [UnixCF]
